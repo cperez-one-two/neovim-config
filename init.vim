@@ -18,9 +18,12 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Plugin settings
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/vimwiki.vim
-
-
-""" VIM-PLUG: A LIGHTWEIGHT PLUGIN MANAGER
+source $HOME/.config/nvim/plug-config/fzf.vim
+"source $HOME/.config/nvim/plug-config/airline.vim
+source $HOME/.config/nvim/themes/airline.vim
+" lua colorizer
+luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+" VIM-PLUG: A LIGHTWEIGHT PLUGIN MANAGER
   " When a new plugin is installed, be sure to run :PlugInstall after
   " listing below to install the plugin
   "call plug#begin('~/.config/nvim/autoload/plugged')

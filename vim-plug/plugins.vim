@@ -10,5 +10,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vimwiki/vimwiki'
     " CoC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " fzf
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    " vim-rooter
+    Plug 'airblade/vim-rooter'
+    " Status and tab bar
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    " Color previews on RBG values
+    Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()

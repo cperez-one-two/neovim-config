@@ -18,17 +18,18 @@
   let mapleader=","
   set timeoutlen=2500
   set splitbelow splitright    " Changes default window split behavior
-  set path+=**                 " Allows for searching into subdirectories
+  "set path+=**                 " Allows for searching into subdirectories
   set foldmethod=indent        " Enable code folding
   set foldlevel=99
   set ignorecase
   set smartcase
   set ai                       " auto indent
   set si                       " smart indent
-  set formatoptions-=cro       " Stop newline continuation of comments
+  set showtabline=2            " Tab bar at the top
+  set termguicolors            " Allows for lua plugin to work
 
   " Color settings
-  ""colo confy TODO:: Wait until done with basic setup
+  "colo confy  TODO:: Wait until done with basic setup
 
   " Tab settings
   set expandtab
@@ -41,4 +42,4 @@
   autocmd BufWritepre * %s/\n\+\%$//e
 
   " Auto source when writing to init.vim TURN OFF WHEN DEBUG
-  " au! BufWritePost $HOME/.config/nvim/init.vim source %
+  au! BufWritePost $HOME/.config/nvim/init.vim source %
