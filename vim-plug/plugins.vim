@@ -8,7 +8,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Vimwiki
     Plug 'vimwiki/vimwiki'
-    " CoC
+    " CoC Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " fzf
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -20,5 +20,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Color previews on RBG values
     Plug 'norcalli/nvim-colorizer.lua'
+    " Theme
+    Plug 'joshdick/onedark.vim'
+    " Whichkey - Port of emacs-which-key
+    "Plug 'liuchengxu/vim-whick-key'
 
 call plug#end()

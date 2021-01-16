@@ -29,7 +29,7 @@
   set termguicolors            " Allows for lua plugin to work
 
   " Color settings
-  "colo confy  TODO:: Wait until done with basic setup
+  " colo onedark
 
   " Tab settings
   set expandtab
