@@ -2,14 +2,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
+    " File Explorer - DEPRECATED: use coc-explorer
+    "Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Vimwiki
     Plug 'vimwiki/vimwiki'
     " CoC Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Snippets
+    Plug 'honza/vim-snippets'
     " fzf
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -23,6 +25,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Theme
     Plug 'joshdick/onedark.vim'
     " Whichkey - Port of emacs-which-key
-    "Plug 'liuchengxu/vim-whick-key'
+    Plug 'liuchengxu/vim-which-key'
+    " Commenting
+    Plug 'tpope/vim-commentary'
 
 call plug#end()

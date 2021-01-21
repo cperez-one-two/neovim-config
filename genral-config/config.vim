@@ -15,8 +15,7 @@
   set clipboard+=unnamedplus    " Use X11 clipboard for yanking and putting
   set mouse=a                   " Mouse enabled
   set conceallevel=0            " Backticks visible in markdown
-  let mapleader=","
-  set timeoutlen=2500
+  set timeoutlen=500           " Timeout on leader key. Also necessary for vim-whick-key menu
   set splitbelow splitright    " Changes default window split behavior
   "set path+=**                 " Allows for searching into subdirectories
   set foldmethod=indent        " Enable code folding
@@ -27,19 +26,22 @@
   set si                       " smart indent
   set showtabline=2            " Tab bar at the top
   set termguicolors            " Allows for lua plugin to work
-
+  set formatoptions-=cro       " stop newline commenting
+  set signcolumn=yes           " show the signcolumn
+  set guifont=SauceCodePro\ Nerd\ Font
   " Color settings
   " colo onedark
 
   " Tab settings
   set expandtab
   set shiftwidth=2
-  set softtabstop=2
+  set tabstop=2
   set smarttab
 
   "Automatically delete trailing whitespace and newlines upon save
   autocmd BufWritePre * %s/\s\+$//e
-  autocmd BufWritepre * %s/\n\+\%$//e
-
-  " Auto source when writing to init.vim TURN OFF WHEN DEBUG
-  au! BufWritePost $HOME/.config/nvim/init.vim source %
+  autocmd BufWritePre * %s/\n\+\%$//e
+  " Newline commenting disable
+  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+  " fix commenting on json files
+  autocmd FileType json syntax match Comment +\/\/.\+$+
