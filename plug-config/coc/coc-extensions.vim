@@ -9,5 +9,6 @@ let g:coc_global_extensions = [
   \ 'coc-explorer',
   \ 'coc-tailwindcss',
   \ 'coc-snippets',
-  \ 'coc-sh'
+  \ 'coc-sh',
+  \ 'coc-clangd',
   \ ]
