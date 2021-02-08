@@ -23,7 +23,8 @@ source $HOME/.config/nvim/plug-config/vimwiki.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/vim-commentary.vim
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/nord.vim
+"source $HOME/.config/nvim/themes/onedark.vim
 
 " lua colorizer
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua

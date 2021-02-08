@@ -29,8 +29,7 @@
   set formatoptions-=cro       " stop newline commenting
   set signcolumn=yes           " show the signcolumn
   set guifont=SauceCodePro\ Nerd\ Font
-  " Color settings
-  " colo onedark
+  set cursorline
 
   " Tab settings
   set expandtab

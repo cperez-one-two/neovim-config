@@ -23,7 +23,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Color previews on RBG values
     Plug 'norcalli/nvim-colorizer.lua'
     " Theme
-    Plug 'joshdick/onedark.vim'
+    " Plug 'joshdick/onedark.vim'
+    Plug 'arcticicestudio/nord-vim'
     " Whichkey - Port of emacs-which-key
     Plug 'liuchengxu/vim-which-key'
     " Commenting
