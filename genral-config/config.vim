@@ -28,7 +28,7 @@
   set termguicolors            " Allows for lua plugin to work
   set formatoptions-=cro       " stop newline commenting
   set signcolumn=yes           " show the signcolumn
-  set guifont=SauceCodePro\ Nerd\ Font
+  set guifont=FiraCode\ Nerd\ Font
   set cursorline
 
   " Tab settings
